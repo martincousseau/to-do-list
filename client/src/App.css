@@ -1,0 +1,272 @@
+/* Police : pensez à importer une police moderne (ex. Montserrat ou Roboto) via Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #121212; /* Fond sombre */
+  color: #FFFFFF;
+}
+
+/* Container principal pour l'authentification */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000, #222222);
+  padding: 20px;
+}
+
+/* Styles des formulaires d'authentification */
+.auth-container form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-container input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+.auth-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #D50000; /* Rouge élégant, inspiré de Porsche */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.auth-container button:hover {
+  background-color: #FF1744;
+}
+
+/* Application principale */
+.app-container {
+  background-color: #121212;
+  padding: 20px;
+}
+
+.app-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Bouton de déconnexion */
+.app-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #D50000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.app-container button:hover {
+  background-color: #FF1744;
+}
+
+/* Styles pour la zone d'ajout de liste */
+.add-list-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-list-container input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+.add-list-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #D50000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-list-container button:hover {
+  background-color: #FF1744;
+}
+
+/* Styles pour les listes */
+.lists-panel {
+  margin-top: 20px;
+}
+
+.lists-panel h2 {
+  margin-bottom: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.3s ease;
+}
+
+.list-item:hover {
+  background-color: #1e1e1e;
+}
+
+/* Boutons dans chaque item */
+.list-item button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #D50000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list-item button:hover {
+  background-color: #FF1744;
+}
+
+/* Sélecteur d'utilisateur dans le partage */
+.list-item select {
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* Bouton d'inscription discret avec contour rouge */
+.btn-outline {
+  border: 2px solid #D50000;
+  background: transparent;
+  color: #D50000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: auto;             /* Pas de largeur à 100% */
+  margin: 10px auto;       /* Espace vertical et centré */
+  display: block;
+}
+
+.btn-outline:hover {
+  background-color: #D50000;
+  color: #fff;
+}
+
+.btn-outline {
+  border: 1px solid #D50000;  /* Trait fin rouge */
+  background: transparent;    /* Fond transparent */
+  color: #D50000;             /* Texte rouge */
+  padding: 8px 16px;          /* Espacement interne réduit */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  margin: 10px auto;
+  max-width: 200px;
+  text-align: center;
+}
+
+/* Pour espacer et centrer les autres boutons dans le container d'authentification */
+.auth-container {
+  text-align: center;
+}
+
+.auth-container button {
+  margin: 10px auto;      /* Espace entre les boutons */
+  display: inline-block;  /* Pour éviter qu'ils prennent toute la largeur */
+  max-width: 300px;
+}
+
+.logout-container {
+  position: absolute;
+  top: 10px;  /* Ajustez la valeur selon vos besoins */
+  left: 10px; /* Ajustez la valeur selon vos besoins */
+}
+
+/* Vous pouvez ajouter un style spécifique au bouton si souhaité */
+.logout-container button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #D50000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-container button:hover {
+  background-color: #FF1744;
+}
+
+/* Regroupement des champs Prénom et Nom */
+.name-fields {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.name-fields input {
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+
+.todo-actions {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.todo-actions button {
+  margin-right: 8px;
+}
+
+.add-todo-form {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espace de 10px entre l'input et le bouton */
+}
+
+.add-todo-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px; /* Espace de 20px entre AddTodo et les TodoItems */
+}
+
+.todo-item {
+  margin-bottom: 10px; /* Ajustez la valeur selon vos préférences */
+}
